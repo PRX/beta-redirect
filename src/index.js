@@ -7,6 +7,13 @@ export const handler = async (event) => {
 
   const { path } = event.requestContext.http;
 
+  if (path === "/") {
+    return {
+      statusCode: 301,
+      headers: { location: "https://www.prx.org/" },
+    };
+  }
+
   if (path.startsWith("/stories/")) {
     const storyId = path.split("/")[2];
 
