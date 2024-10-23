@@ -37,7 +37,7 @@ export const handler = async (event) => {
       // If we couldn't find a suitable URL to redirect to from Feeder,
       // we'll assume that this is a piece in Exchange, and redirect
       // there instead
-      const exchangeUrl = `https://${EXCHANGE_HOSTNAME}/pieces/${storyId}m=false`;
+      const exchangeUrl = `https://${EXCHANGE_HOSTNAME}/pieces/${storyId}?m=false`;
 
       return {
         statusCode: 301,
