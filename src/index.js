@@ -15,7 +15,7 @@ export const handler = async (event) => {
   }
 
   if (path.startsWith("/stories/")) {
-    const storyId = path.split("/")[2];
+    const storyId = path.match(/^\/stories\/([0-9]+)/)?.[1];
 
     if (storyId) {
       // Check if Feeder can find an episode for this story ID
@@ -45,7 +45,7 @@ export const handler = async (event) => {
       };
     }
   } else if (path.startsWith("/series/")) {
-    const seriesId = path.split("/")[2];
+    const seriesId = path.match(/^\/series\/([0-9]+)/)?.[1];
 
     if (seriesId) {
       // Check if Feeder can find a podcast for this series ID
