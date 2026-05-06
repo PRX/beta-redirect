@@ -1,7 +1,13 @@
+/** @import {LambdaFunctionURLEvent,LambdaFunctionURLResult} from "aws-lambda" */
+
 const EXCHANGE_HOSTNAME = process.env.EXCHANGE_HOSTNAME;
 const FEEDER_HOSTNAME = process.env.FEEDER_HOSTNAME;
 const PLAY_HOSTNAME = process.env.PLAY_HOSTNAME;
 
+/**
+ * @param {LambdaFunctionURLEvent} event
+ * @returns {Promise<LambdaFunctionURLResult>}
+ */
 export const handler = async (event) => {
   console.log(JSON.stringify({ event: event }));
 

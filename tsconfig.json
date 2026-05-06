@@ -5,7 +5,8 @@
     "jsx": "preserve",
     "checkJs": true,
     "noEmit": true,
-    "allowJs": true
+    "allowJs": true,
+    "types": ["node"],
   },
-  "exclude": ["node_modules", "**/node_modules/*"]
+  "exclude": ["node_modules", "**/node_modules/*"],
 }

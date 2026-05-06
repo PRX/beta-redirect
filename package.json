@@ -12,14 +12,9 @@
     "url": "git://github.com/PRX/beta-redirect.git"
   },
   "devDependencies": {
+    "@biomejs/biome": "*",
     "@types/aws-lambda": "*",
     "@types/node": "*",
-    "eslint": "*",
-    "eslint-config-airbnb-base": "*",
-    "eslint-config-prettier": "*",
-    "eslint-plugin-import": "*",
-    "eslint-plugin-prettier": "*",
-    "prettier": "*",
     "typescript": "*"
   }
 }
